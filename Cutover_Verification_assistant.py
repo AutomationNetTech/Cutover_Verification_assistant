@@ -2,15 +2,14 @@
 # Program: 		Cutover_Verification_assistant.py
 # Author: 		Aaron Carroll
 # Created: 		2025-01-09
-# Purpose: 		
-#               This program is meant to serve as an assistant cutting over a 
+# Purpose: 		This program is meant to serve as an assistant cutting over a 
 #               switch. It will connect to the switch and pull all active non 
 #               trunking interfaces, there respective MAC address and then
 #               connect to the cores and resolve the IP address of the MAC.
 #               This data will be store as a CSV and YAML file for the name 
 #               you choose. You will be able to also verify all connectins 
 #               came back after by selecting the verify opion and giving 
-#               the path to the previously create CSV or YAML file. 
+#               the path to the previously create CSV or YAML file..
 # =============================================================================
 import os
 import netmiko
@@ -53,9 +52,13 @@ def main():
     # If user selected to verify endpionts using ICMP after cutover
     if(user_input == 1):
         endpoint_file_path = get_file_path()
-        print("finish this selection")
+        print("finish this selection: Add Mac address comparison, and ping")
     else:
+        print("Add prompt gather switch and core info and well as credentials")
+        print("Pull MACs from the switch")
+        print("Add gathered information to CSV file")
         
 # Run the main function
 if __name__ == "__main__":
     main()
+
