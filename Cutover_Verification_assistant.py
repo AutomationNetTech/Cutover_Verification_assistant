@@ -9,7 +9,7 @@
 #               This data will be store as a CSV and YAML file for the name 
 #               you choose. You will be able to also verify all connectins 
 #               came back after by selecting the verify opion and giving 
-#               the path to the previously create CSV or YAML file..
+#               the path to the previously create CSV or YAML file.
 # =============================================================================
 import os
 import netmiko
