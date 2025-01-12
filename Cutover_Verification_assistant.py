@@ -2,7 +2,8 @@
 # Program: 		Cutover_Verification_assistant.py
 # Author: 		Aaron Carroll
 # Created: 		2025-01-09
-# Purpose: 		This program is meant to serve as an assistant cutting over a 
+# Purpose: 		
+#               This program is meant to serve as an assistant cutting over a 
 #               switch. It will connect to the switch and pull all active non 
 #               trunking interfaces, there respective MAC address and then
 #               connect to the cores and resolve the IP address of the MAC.
